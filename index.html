@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+    <title>Gregtoonz inc</title>
+    <link rel="stylesheet" href="Nickiegen.css" title="" type="" />
+    
+  </head>
+  <body>
+    <header>
+        <h1>Nick<span>Name</span> Generator</h1>
+    </header>
+    
+    <div class="container">
+      <h4 id="ptag"></h4>
+    </div>
+    <div class="generate-btn" id="generate-btn"><p>Generate</p></div>
+    
+    
+    
+    
+    
+    <footer>
+      <p> &copy; Greg Inc, All rights reserved</p>
+    </footer>
+    
+    
+    
+    <script >
+      let ptext = document.getElementById('ptag');
+      let btn = document.getElementById('generate-btn');
+
+
+      function namegen(){
+        let names= ['Boywithnojob', 'Vato', 'fish', 'Dante', 'Negan']
+        let randomnum= Math.floor(Math.random() *4)
+        rand = names[randomnum]
+      
+        return ptext.innerHTML = rand
+}
+      
+      
+
+      btn.addEventListener('click', namegen)
+
+
+
+
+
+    </script>
+  </body>
+</html>
